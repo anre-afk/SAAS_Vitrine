@@ -7,35 +7,58 @@
 <meta name="description" content="Demandez un audit gratuit de votre présence en ligne : vitesse, sécurité, affichage mobile et données structurées de votre site.">
 <meta name="application-name" content="SEO Agency SAAS">
 <meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<script>(function(d){d.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')d.setAttribute('data-theme',t)}catch(e){}setTimeout(function(){if(!window.__site)d.classList.remove('js')},3000)})(document.documentElement)</script>
+<link rel="icon" href="data:,">
 <link rel="stylesheet" href="css/style.css">
+<script src="js/site.js" defer></script>
 </head>
 <body>
-<header class="entete"><div class="conteneur">
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header class="entete"><div class="conteneur entete__barre">
 <a class="logo" href="index.html">SEO Agency SAAS</a>
-<nav aria-label="Navigation principale"><a href="index.html">Accueil</a><a href="offres.html">Offres</a><a href="audit-gratuit.html" aria-current="page">Audit gratuit</a><a href="contact.html">Contact</a></nav>
+<nav id="menu" class="nav" aria-label="Navigation principale"><a href="index.html">Accueil</a><a href="offres.html">Offres</a><a href="audit-gratuit.html" aria-current="page">Audit gratuit</a><a href="contact.html">Contact</a></nav>
+<div class="entete__actions">
+<button class="theme" type="button" aria-label="Changer de thème"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><g class="theme__soleil" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2M12 20.5v2M1.5 12h2M20.5 12h2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M4.6 19.4L6 18M18 6l1.4-1.4"/></g><path class="theme__lune" fill="currentColor" d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1z"/></svg></button>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+</div>
 </div></header>
-<main class="conteneur">
+<main id="contenu">
+<section class="heros heros--page"><div class="conteneur">
 <h1>Audit gratuit de votre présence en ligne</h1>
-<p class="intro">Un premier état des lieux, sans engagement, pour savoir où vous en êtes.</p>
-<h2>Ce que contient l'audit</h2>
-<ul>
-<li>La vitesse de chargement de votre site</li>
-<li>La sécurité (HTTPS)</li>
-<li>L'affichage sur téléphone</li>
-<li>Les données structurées qui aident Google et les assistants IA à comprendre votre activité</li>
+<p class="chapeau">Un premier état des lieux, sans engagement, pour savoir où vous en êtes.</p>
+<p class="actions"><a class="lien-fleche" href="#demande">Demander mon audit</a></p>
+</div></section>
+
+<section class="bloc"><div class="conteneur">
+<h2 class="bloc__titre" data-reveal>Ce que contient l'audit</h2>
+<ul class="points">
+<li data-reveal style="--i:1">La vitesse de chargement de votre site</li>
+<li data-reveal style="--i:2">La sécurité (HTTPS)</li>
+<li data-reveal style="--i:3">L'affichage sur téléphone</li>
+<li data-reveal style="--i:4">Les données structurées qui aident Google et les assistants IA à comprendre votre activité</li>
 </ul>
-<h2>Comment ça se passe</h2>
-<ol>
-<li>Vous nous écrivez avec le nom de votre entreprise, votre ville et l'adresse de votre site si vous en avez un.</li>
-<li>Nous réalisons l'audit.</li>
-<li>Nous vous envoyons le rapport et nous en discutons si vous le souhaitez.</li>
+</div></section>
+
+<section class="bloc bloc--fond"><div class="conteneur duo">
+<h2 class="bloc__titre" data-reveal>Comment ça se passe</h2>
+<ol class="etapes">
+<li data-reveal style="--i:1">Vous nous écrivez avec le nom de votre entreprise, votre ville et l'adresse de votre site si vous en avez un.</li>
+<li data-reveal style="--i:2">Nous réalisons l'audit.</li>
+<li data-reveal style="--i:3">Nous vous envoyons le rapport et nous en discutons si vous le souhaitez.</li>
 </ol>
-<p><a class="bouton" href="mailto:A_REMPLIR_EMAIL?subject=Demande%20d%27audit%20gratuit&body=Nom%20de%20l%27entreprise%20%3A%0ASite%20web%20%28si%20vous%20en%20avez%20un%29%20%3A%0AVille%20%3A%0A">Demander mon audit par e-mail</a></p>
-<p class="note">Vos informations servent uniquement à réaliser l'audit. Voir la <a href="confidentialite.html">politique de confidentialité</a>.</p>
+</div></section>
+
+<section class="bloc" id="demande"><div class="conteneur demande duo">
+<h2 data-reveal>Prêt à faire le point&nbsp;?</h2>
+<p data-reveal style="--i:1"><a class="bouton" href="mailto:A_REMPLIR_EMAIL?subject=Demande%20d%27audit%20gratuit&body=Nom%20de%20l%27entreprise%20%3A%0ASite%20web%20%28si%20vous%20en%20avez%20un%29%20%3A%0AVille%20%3A%0A">Demander mon audit par e-mail</a></p>
+<p class="note" data-reveal style="--i:2">Vos informations servent uniquement à réaliser l'audit. Voir la <a href="confidentialite.html">politique de confidentialité</a>.</p>
+</div></section>
 </main>
 <footer class="pied"><div class="conteneur">
-<p>SEO Agency SAAS</p>
-<p><a href="mentions-legales.html">Mentions légales</a> · <a href="cgv.html">CGV</a> · <a href="confidentialite.html">Confidentialité</a></p>
+<p class="pied__nom">SEO Agency SAAS</p>
+<p class="pied__liens"><a href="mentions-legales.html">Mentions légales</a><a href="cgv.html">CGV</a><a href="confidentialite.html">Confidentialité</a><a href="contact.html">Contact</a></p>
+<p class="pied__note">Ce site n'utilise ni cookie ni outil de mesure d'audience.</p>
 </div></footer>
 </body>
 </html>
