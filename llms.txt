@@ -1,0 +1,9 @@
+# SEO Agency SAAS
+
+> Audit de présence en ligne, SEO local, GEO (visibilité dans les assistants IA) et automatisation pour TPE et PME d'Île-de-France. Obligation de moyens, aucune garantie de classement.
+
+## Pages
+- [Accueil](https://A_REMPLIR_DOMAINE/): présentation
+- [Offres](https://A_REMPLIR_DOMAINE/offres.html): SEO local (mise en place 690 € HT, accompagnement 390 € HT/mois), GEO (lancement 790 € HT, accompagnement 490 € HT/mois), automatisation
+- [Audit gratuit](https://A_REMPLIR_DOMAINE/audit-gratuit.html): contenu de l'audit et démarche
+- [Contact](https://A_REMPLIR_DOMAINE/contact.html)

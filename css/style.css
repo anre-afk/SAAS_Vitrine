@@ -1,0 +1,25 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6;color:#1b2430;background:#fff}
+.conteneur{max-width:880px;margin:0 auto;padding:0 20px}
+.entete{border-bottom:1px solid #e2e6ec}
+.entete .conteneur{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px;padding-top:14px;padding-bottom:14px}
+.logo{font-weight:700;font-size:1.1rem;color:#1f4e79;text-decoration:none}
+nav a{margin-right:16px;color:#1b2430;text-decoration:none}
+nav a:last-child{margin-right:0}
+nav a:hover,nav a[aria-current]{color:#1f4e79;text-decoration:underline}
+h1{font-size:1.9rem;line-height:1.25;margin:32px 0 16px}
+h2{font-size:1.35rem;margin:32px 0 12px}
+h3{font-size:1.1rem;margin:0 0 8px}
+a{color:#1f4e79}
+.intro{font-size:1.1rem}
+.bouton{display:inline-block;background:#1f4e79;color:#fff;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:600}
+.bouton:hover{background:#173b5c}
+.cartes{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.carte{border:1px solid #e2e6ec;border-radius:8px;padding:16px}
+.carte p{margin:0 0 8px}
+.prix{background:#f2f6fa;border-radius:6px;padding:10px 14px}
+.note{font-size:.9rem;color:#4a5565}
+section{margin-bottom:24px;padding-bottom:8px;border-bottom:1px solid #eef1f5}
+.pied{margin-top:48px;border-top:1px solid #e2e6ec;padding:20px 0;font-size:.9rem;color:#4a5565}
+.pied p{margin:4px 0}
+@media (max-width:600px){h1{font-size:1.5rem}}
