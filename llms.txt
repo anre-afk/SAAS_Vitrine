@@ -4,6 +4,6 @@
 
 ## Pages
 - [Accueil](https://A_REMPLIR_DOMAINE/): présentation
-- [Offres](https://A_REMPLIR_DOMAINE/offres.html): SEO local (mise en place 690 € HT, accompagnement 390 € HT/mois), GEO (lancement 790 € HT, accompagnement 490 € HT/mois), automatisation
+- [Offres](https://A_REMPLIR_DOMAINE/offres.html): SEO local (mise en place 690 € HT, accompagnement 390 € HT/mois), GEO (lancement 790 € HT, accompagnement 490 € HT/mois), automatisation de processus (Starter 810 € HT, Pro 3 150 € HT, Premium 6 300 € HT, maintenance 135 € HT/mois)
 - [Audit gratuit](https://A_REMPLIR_DOMAINE/audit-gratuit.html): contenu de l'audit et démarche
 - [Contact](https://A_REMPLIR_DOMAINE/contact.html)
