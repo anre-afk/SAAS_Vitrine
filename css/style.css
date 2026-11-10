@@ -194,10 +194,16 @@ a:hover { text-decoration: underline; }
   position: sticky;
   top: 0;
   z-index: 50;
+  transition: box-shadow var(--t-normal) var(--ease-sortie);
+}
+.entete::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background: var(--entete);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
-  transition: box-shadow var(--t-normal) var(--ease-sortie);
 }
 .entete.est-defile { box-shadow: 0 1px 0 var(--ligne); }
 
@@ -282,12 +288,13 @@ a:hover { text-decoration: underline; }
 
   .js .nav {
     position: fixed;
-    inset: var(--entete-h) 0 auto 0;
+    inset: var(--entete-h) 0 0 0;
+    overflow-y: auto;
+    overscroll-behavior: contain;
     flex-direction: column;
     gap: 0;
     padding: 1rem var(--gouttiere) 2rem;
     background: var(--fond);
-    box-shadow: 0 24px 40px -28px rgba(0, 0, 0, 0.35);
     visibility: hidden;
     opacity: 0;
     transform: translateY(-0.5rem);
@@ -305,6 +312,9 @@ a:hover { text-decoration: underline; }
     transition: opacity var(--t-rapide) ease, transform var(--t-normal) var(--ease-sortie);
   }
   .js .nav a[aria-current="page"] { color: var(--accent); }
+
+  .menu-ouvert, .menu-ouvert body { overflow: hidden; }
+  .menu-ouvert .entete::before { background: var(--fond); -webkit-backdrop-filter: none; backdrop-filter: none; }
 
   .menu-ouvert .nav {
     visibility: visible;
@@ -723,12 +733,13 @@ a:hover { text-decoration: underline; }
 }
 
 @media (prefers-reduced-transparency: reduce) {
-  .entete { background: var(--fond); -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .entete::before { background: var(--fond); -webkit-backdrop-filter: none; backdrop-filter: none; }
 }
 
 @media (prefers-contrast: more) {
   :root { --encre-2: var(--encre); }
-  .entete { background: var(--fond); -webkit-backdrop-filter: none; backdrop-filter: none; box-shadow: 0 1px 0 var(--encre); }
+  .entete::before { background: var(--fond); -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .entete { box-shadow: 0 1px 0 var(--encre); }
   .carte, .tuile, .points li, .ancres a, .recherche { outline: 1px solid var(--encre); }
 }
 
